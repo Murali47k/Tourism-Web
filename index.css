@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; ;
+}
+
+/* hero section*/
+#hero {
+    position: relative;
+}
+#hero header{
+    position: absolute;
+    width:100%;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    color:black;
+    z-index: 1;
+}
+header .navbar {
+    max-width: 900px;
+    position: relative;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar img{
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    margin-left: 700px;
+    margin-top: 15px;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;  
+    
+}
+
+#hamburger-menu{
+    background-color:white;
+    height: 30px;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-right: 15px;
+    display: none;
+}
+#hamburger-menu .strip {
+    display: block;
+    height: 2px;
+    background-color:black;
+    margin: 4px 0;
+}
+
+.hero_container{
+    background: url(hero2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 600px;
+}
+
+.backfade{
+    background-color: rgba(10, 6, 34, 0.552);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_content{
+    position: absolute;
+    text-align: center;
+    color: #ffffffe2;
+    top:50%;
+    margin-top: -50px; 
+}
+
+.hero_content h2{
+    font-size: 80px;
+    font-weight: 800;
+}
+.hero_content p{
+    font-size: 50px;
+    font-weight: 300;
+}
+/* hero section */
+
+/* Services section */
+.services_background{
+    background-color: #9893c8;/* #cee0fa*/
+    padding: 10px;
+}
+.services_background h5{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+.services_container{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.service_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    box-shadow: 0 4px 4px 2px rgb(11, 13, 82);
+    border-radius: 20px;
+    padding: 20px;
+}
+.service_card h3{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    color:black;
+    font-size: 23px;
+    font-weight: 1000;
+    margin-bottom: 40px;
+}
+.service_card h4{
+    margin-bottom: 20px;
+    color:black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.service_card p{
+    text-align: center;
+}
+/* Services section */
+/* Destinations */
+
+.destination_background{
+    background-color: rgba(8, 9, 48, 0.964);
+    height:750px;
+}
+.destinations_container{
+    display: flex;
+    gap: 40px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.prev{
+    height: 60px;
+    width:40px;
+    font-size: 3em;
+    padding: 4px;
+    color:rgb(255, 255, 255);
+    background:rgba(8, 9, 48, 0);
+    border: none;
+    outline: none;
+}
+
+.destination_card{
+    border:2px solid black;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px #9893c8 ;
+}
+
+.destination_card:hover{
+    background-color: white;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.destination_card img{
+    height: 500px;
+    width:350px;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.destination_background h5{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+@keyframes fade {
+    from{opacity: .5;}
+    to{opacity: 1;}
+}
+/* destinations */
+/* Packages */
+.packages_background{
+    background-color: rgb(16, 15, 21);
+    color: #fff;
+    height:600px;
+    
+}
+
+.packages_background h5{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+.packages_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 25px;
+}
+
+.package{
+    height: 400px;
+    width:300px;
+    background-size: cover;
+    position: relative;
+    border: 5px solid white;
+    box-shadow: 4px 4px 4px 1px rgba(255, 255, 255, 0.57)
+}
+
+.package .circle{
+    position: absolute;
+    background-color: rgb(214, 10, 10);
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+}
+
+.circle p{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.package h5{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -26px;
+    top:-10px;
+}
+.package .title{
+    background-color: black;
+    margin-top: 27px;
+    height:90px;
+}
+.package .content{
+    background-color: rgba(0, 0, 0, 0.455);
+    margin-top: 200px;
+    padding: 2px 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.package:hover .content{
+    opacity: 1;
+}
+
+.package:hover .circle{
+    height: 120px;
+    width: 120px;
+    margin-left: -30px;
+    margin-top: -30px;
+    background-color: red;
+}
+
+.package:hover .circle p{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* packages */
+/* reveiws */
+.reviews_background{
+    background:url(hero3.png);
+    background-size:cover ;
+    color: black;
+    height: 600px;
+}
+.bluefade{
+    background-color: rgba(10, 6, 34, 0.374);
+    width: 100%;
+    height: 100%;
+}
+.reviews_background h5{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.reviews_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    flex-direction: column;
+    position: relative;
+}
+
+.reviews_container .review_card{
+    
+    opacity: 0;
+}
+
+.reviews_container .Vreview_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    height: 400px;
+    background-color:  #9893c8b1;
+    border-radius: 20px;
+    border: 5px solid  rgb(14, 12, 88);
+    box-shadow: 4px 4px 4px 1px rgba(255, 255, 255, 0.57);
+    padding: 40px 20px;
+    opacity: 1;
+    position: absolute;
+    top:20px;
+}
+
+.profile img{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid rgb(14, 12, 88);
+}
+
+.review_card .review h6{
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+    padding: 5px 0px;
+}
+
+.review_card .review p{
+    font-size:18px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+}
+
+
+/* start: footer section styles */
+footer {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    padding-bottom: 2rem;
+  }
+  
+  .footer-container {
+    max-width: 625px;
+    margin: 0 auto;
+    height: 420px;
+  }
+
+  #footer-logo{
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
+  #footer-logo img{
+    width:200px;
+    height: 130px;
+    margin-top: 40px;
+  }
+  
+  footer nav {
+    margin: 2rem 0 6rem;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer ul li a {
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  footer .mailing-list {
+    position: relative;
+  }
+  
+  footer input {
+    color: #000000;
+    height: 78px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(234, 235, 238);
+    border: 4px solid #000000;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 2rem;
+  }
+  
+  footer button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-weight: bolder;
+    padding: 1.75rem 3rem;
+    background: #000000;
+    color: #fff;
+  }
+  
+  footer ul.social-icons {
+    max-width: 400px;
+    margin: 4rem auto 3rem;
+    list-style: none;
+  }
+  
+  footer ul.social-icons li a {
+    font-size: 2rem;
+
+  }
+
+  /* end: footer section styles */
